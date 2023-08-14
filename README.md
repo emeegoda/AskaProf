@@ -1,5 +1,5 @@
 # AskaProf
-Ask a professor what their real estate technology course is about?
+Ask a professor what their real estate technology course is about.
 
 
 AskaProf is uses streamlit to launch a website where journalists and students can ask a professor about their real estate technology course. 
