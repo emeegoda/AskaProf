@@ -53,7 +53,7 @@ would best answer that question based on past answers and you will follow ALL of
 logical arguments and other details
 2/ If the answers are irrelevant, then try to mimic the style of past answers as well as reflect
 relevant and accurate information about real estate technology.  
-3/ Keep the answers punchy and professional
+3/ Make sure the answers are no longer than 7 sentences and are professional
 
 Below is a message I received from the prospect:
 {question}
