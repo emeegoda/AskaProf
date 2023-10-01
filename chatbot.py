@@ -8,7 +8,7 @@ from langchain.chains import LLMChain
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv(dotenv_path="eleanormeegoda/workspace/config/environments/common/.env")
 
 api_key = os.getenv("OPENAI_API_KEY")
 
