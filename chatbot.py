@@ -5,15 +5,18 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import os
 
-load_dotenv(dotenv_path="eleanormeegoda/workspace/config/environments/common/.env")
+# Find and load the .env file
+load_dotenv(find_dotenv())
 
 api_key = os.getenv("OPENAI_API_KEY")
 
+print(api_key)
+
 # 1. Vectorise the sales response csv data
-loader = CSVLoader(file_path="GS_CourseOverview.csv")
+loader = CSVLoader(file_path="/Users/eleanormeegoda/workspace/AskaProf/GS_CourseOverview.csv")
 documents = loader.load()
 
 #print(len(documents))
