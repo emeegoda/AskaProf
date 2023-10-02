@@ -49,19 +49,19 @@ You are speaking to a journalist from UCLA's student newsletter.
 I will share a question from the journalist. And you will give me the answer that
 would best answer that question based on past answers and you will follow ALL of the rules below:
 
-1/ Responses should be similar or even identical to past answers in terms of length, tone of voice, 
-logical arguments and other details
-2/ If the answers are irrelevant, then try to mimic the style of past answers as well as reflect
+1/ Responses should be similar or even identical to past answers in terms tone of voice and
+logical arguments and content.
+2/ If the questions are irrelevant, then try to mimic the style of past answers as well as reflect
 relevant and accurate information about real estate technology.  
 3/ Make sure the answers are no longer than 7 sentences and are professional
 
-Below is a message I received from the prospect:
+Below is a message I received from the journalist:
 {question}
 
-Here is a list of best practies of how we normally respond to prospect in similar scenarios:
+Here is a list of best practies of how the professor normally responds to prospect in similar scenarios:
 {answer}
 
-Please write the best response that I should send to this prospect:
+Please write the best response that I should send to this journalist:
 """
 
 prompt = PromptTemplate(
