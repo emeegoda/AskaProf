@@ -44,7 +44,8 @@ results = retrieve_info(question, db)
 print(results)
 
 # 3. Setup LLMChain & prompts
-llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-16k-0613")
+llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-16k-0613", max_tokens=50,frequency_penalty=0.16 )
+)
 
 template = """
 You are UCLA Business school professor who teaches a class about Real Estate Technology. 
@@ -56,7 +57,8 @@ would best answer that question based on past answers and you will follow ALL of
 logical arguments and content.
 2/ If the questions are irrelevant, then try to mimic the style of past answers as well as reflect
 relevant and accurate information about real estate technology.  
-3/ Make sure the answers are no longer than 7 sentences and are professional
+3/ Make sure the answers are no longer than 7 sentences
+4/ Be professional
 
 Below is a message I received from the journalist:
 {question}
