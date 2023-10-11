@@ -13,7 +13,7 @@ load_dotenv(find_dotenv())
 
 api_key = os.getenv("OPENAI_API_KEY")
 
-print(api_key)
+#print(api_key)
 
 # 1. Vectorise the sales response csv data
 loader = CSVLoader(file_path="/Users/eleanormeegoda/workspace/AskaProf/GS_CourseOverview.csv")
@@ -45,7 +45,6 @@ print(results)
 
 # 3. Setup LLMChain & prompts
 llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-16k-0613", max_tokens=50,frequency_penalty=0.16 )
-)
 
 template = """
 You are UCLA Business school professor who teaches a class about Real Estate Technology. 
